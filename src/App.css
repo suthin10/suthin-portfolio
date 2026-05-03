@@ -407,5 +407,144 @@ p {
   position: relative;
   z-index: 2;
 }
+.contact-section,
+.contact {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  display: block;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.18);
+}
+
+.contact-left {
+  display: none;
+}
+
+.contact-right {
+  width: 100%;
+  padding: 0;
+  color: white;
+}
+
+.contact-right h2,
+.contact h2 {
+  font-size: 40px;
+  color: #00e5ff;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.name-row {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 229, 255, 0.45);
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #b9d8ff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+}
+
+.contact-form button {
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #00e5ff;
+  color: #050816;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px #00e5ff;
+}
+
+.contact-info {
+  max-width: 520px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.contact-info a {
+  color: #00e5ff;
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.contact-info a:hover {
+  text-shadow: 0 0 10px #00e5ff;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 25px;
+  }
+
+  .contact-right h2,
+  .contact h2 {
+    font-size: 32px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+  }
+}
 } 
 

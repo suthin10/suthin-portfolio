@@ -111,32 +111,100 @@ function App() {
         </div>
       </section>
 
-      <section id="contact" className="section contact">
-        <h2>Contact</h2>
-        <p>Email: suthinvarghese1998@gmail.com</p>
-        <p>Mobile: +91 9645069467</p>
-        <p>Location: Trivandrum, Kerala</p>
-        <p>
-  LinkedIn:
-  <a
-    href="https://www.linkedin.com/in/suthin-varghese/"
-    target="_blank"
-  >
-    View Profile
-  </a>
-</p>
+  <section id="contact" className="contact-section">
 
-<p>
-  GitHub:
-  <a
-    href="https://github.com/suthin10"
-    target="_blank"
-  >
-    View GitHub
-  </a>
-</p>
-      </section>
+  <div className="contact-container">
+
+
+    <div className="contact-right">
+      <h2>Contact Me</h2>
+
+      <form
+        className="contact-form"
+        action="https://formspree.io/f/xojrjgrn"
+        method="POST"
+      >
+
+        <div className="name-row">
+          <input
+            type="text"
+            name="firstname"
+            placeholder="First Name"
+            required
+          />
+
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <textarea
+          name="message"
+          placeholder="Leave your message..."
+          required
+        ></textarea>
+
+        <button type="submit">SEND MESSAGE</button>
+
+      </form>
     </div>
+
+  </div>
+
+</section>
+<div className="contact-info">
+
+  <p>
+    📧 Email:
+    <a href="mailto:suthinvarghese1998@gmail.com">
+      suthinvarghese1998@gmail.com
+    </a>
+  </p>
+
+  <p>
+    📱 Mobile:
+    <a href="tel:+919645069467">
+      +91 9645069467
+    </a>
+  </p>
+
+  <p>
+    📍 Location:
+    Trivandrum, Kerala
+  </p>
+
+  <p>
+    💼 LinkedIn:
+    <a
+      href="https://www.linkedin.com/in/suthin-varghese/"
+      target="_blank"
+    >
+      View Profile
+    </a>
+  </p>
+
+  <p>
+    💻 GitHub:
+    <a
+      href="https://github.com/suthin10"
+      target="_blank"
+    >
+      View GitHub
+    </a>
+  </p>
+
+</div>
+</div>
   );
 }
 
