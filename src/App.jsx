@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="portfolio">
       <header className="navbar">
-        <h2>Suthin</h2>
+        <h2>Suthin Varghese</h2>
         <nav>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>

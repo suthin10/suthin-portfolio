@@ -22,17 +22,28 @@ body {
 }
 
 .navbar {
-  width: 100%;
-  padding: 22px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  background: rgba(5, 8, 22, 0.8);
+  padding: 18px 40px;
+  background: rgba(5, 8, 22, 0.85);
   backdrop-filter: blur(12px);
-  z-index: 10;
-  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .navbar h2 {
@@ -309,6 +320,54 @@ p {
     width: 100%;
     max-width: 340px;
   }
+}
+.navbar {
+  padding: 18px 6%;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  margin-left: 0;
+}
+.buttons a {
+  transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 0 25px #00e5ff;
+}
+
+.profile-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.4);
+}
+
+.navbar a {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 12px #00e5ff;
+}
+
+.profile-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 0 35px #00e5ff;
 }
 } 
 
