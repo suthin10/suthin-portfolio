@@ -1,4 +1,5 @@
 import "./App.css";
+import profile from "./assets/profile.jpeg.jpeg";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
 
       <section className="profile-section">
         <div className="profile-card">
-          <div className="profile-img">SV</div>
+          <img src={profile} alt="Profile" className="profile-img" />
 
           <h1>Suthin Varghese</h1>
           <h3>Quality Engineering Anaylst</h3>
@@ -27,6 +28,7 @@ function App() {
           <div className="buttons">
             <a href="#projects">View Projects</a>
             <a href="mailto:suthinvarghese1998@gmail.com">Contact Me</a>
+            <a href="/resume.pdf" download>Download Resume</a>
           </div>
         </div>
       </section>
@@ -114,6 +116,25 @@ function App() {
         <p>Email: suthinvarghese1998@gmail.com</p>
         <p>Mobile: +91 9645069467</p>
         <p>Location: Trivandrum, Kerala</p>
+        <p>
+  LinkedIn:
+  <a
+    href="https://www.linkedin.com/in/suthin-varghese/"
+    target="_blank"
+  >
+    View Profile
+  </a>
+</p>
+
+<p>
+  GitHub:
+  <a
+    href="https://github.com/suthin10"
+    target="_blank"
+  >
+    View GitHub
+  </a>
+</p>
       </section>
     </div>
   );
