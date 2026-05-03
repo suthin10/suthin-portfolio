@@ -565,5 +565,36 @@ p {
     gap: 16px !important;
   }
 }
+.contact-info {
+  text-align: center;
+  align-items: center;
+}
+
+.contact-info p {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+.contact-info a {
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+  .contact-info {
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .contact-info a {
+    font-size: 14px;
+  }
+}
 } 
 
