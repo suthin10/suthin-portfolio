@@ -369,5 +369,43 @@ p {
   transform: scale(1.08) rotate(2deg);
   box-shadow: 0 0 35px #00e5ff;
 }
+.portfolio {
+  background: linear-gradient(-45deg, #050816, #071b3a, #001f2f, #050816);
+  background-size: 400% 400%;
+  animation: neonBackground 12s ease infinite;
+}
+
+@keyframes neonBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.profile-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-section::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: #00e5ff;
+  filter: blur(150px);
+  opacity: 0.25;
+  border-radius: 50%;
+  animation: glowMove 8s ease-in-out infinite alternate;
+}
+
+@keyframes glowMove {
+  from { transform: translate(-120px, -80px); }
+  to { transform: translate(120px, 80px); }
+}
+
+.profile-card {
+  position: relative;
+  z-index: 2;
+}
 } 
 
